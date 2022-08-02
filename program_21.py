@@ -19,6 +19,3 @@ for number in list:
         matchs.append(number)
         print(number)
 print()
-
-
-
