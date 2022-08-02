@@ -4,9 +4,11 @@ Complete a seguinte função para que a mesma devolva todos os possíveis númer
         Exemplo maxDigit=6: 3666, 4566...
 """
 
-maxDigit = 6
+maxDigit = int(input())
+maxDigStr = (str(maxDigit))*4
+maxDigInt = int(maxDigStr)
 matchs = []
-list = range(1000,6666)
+list = range(0,maxDigInt)
 
 for number in list:
     sumNum = sum(int(value) for value in str(number))
@@ -15,5 +17,8 @@ for number in list:
    
     if sumNum == 21 and checkMaxDigit <= maxDigit:
         matchs.append(number)
-        
-print(matchs)
+        print(number)
+print()
+
+
+
